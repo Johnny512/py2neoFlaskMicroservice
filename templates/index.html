@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman';
+            text-align: center;
+            background-color:darkcyan;
+        }
+
+        .results {
+            text-align: center;
+        }
+
+        table.dataframe {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table.dataframe th {
+            text-align: center;
+            font: 1em sans-serif bold;
+        }
+    </style>
+
+</head>
+<body>
+
+        <h1>Neo4j Cypher API</h1>
+        <h3>Use RETURN COLLECT() in your query</h3>
+        <div class="form">
+            <form action="/" method="POST">
+                <textarea name = "content" rows = "3" cols = "80"></textarea>
+                <input type="submit" value="Submit Cypher">
+            </form>
+        </div>
+
+        <div class="results">
+            {{ results | safe }}
+        </div>
+        <div>{{ error }}</div>
+
+</body>
+</html>
