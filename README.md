@@ -1,5 +1,4 @@
 # NEO4j API Microservice
-    clone-> git@gitlab.one.twcbiz.com:jcastillo02/py2neo-flask-microservice.git
     Create Python Environment-> python -m venv env
     install packages-> python install requirements.txt
     Run the app using-> python app.py
